@@ -13,7 +13,7 @@ The goal of the project was not to build a production-ready image processing sys
 ### 1. Synthetic Image Generation
 
 A 64×64 grayscale image was generated using random pixel intensities.
-
+![Original Image](screenshots/original.png)
 **Purpose:**
 
 * Provides a controlled environment for experimentation.
