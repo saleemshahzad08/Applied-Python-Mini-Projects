@@ -30,6 +30,8 @@ Real-world applications typically work with images acquired from cameras, scanne
 
 A scalar value was added to all pixels, followed by clipping values to the valid range [0, 255].
 
+![Brightness Adjustment](screenshots/brightness_adjustment.png)
+
 **Purpose:**
 
 * Demonstrates global intensity manipulation.
@@ -44,6 +46,8 @@ Brightness correction is commonly used in photography software, surveillance sys
 
 Pixel values were normalized to fully utilize the available intensity range.
 
+![Contrast Stretching](screenshots/normalization.png)
+
 **Purpose:**
 
 * Improves visibility of details.
@@ -57,6 +61,8 @@ Contrast enhancement is frequently used in medical imaging, satellite imagery, O
 ### 4. Mean Blur (3×3 Sliding Window)
 
 A blur filter was implemented manually using a sliding window approach.
+
+![Mean Blur](screenshots/blur.png)
 
 **Purpose:**
 
@@ -74,6 +80,12 @@ This task also provides intuition for convolution operations used in deep learni
 
 Horizontal and vertical intensity changes were computed and combined into an edge-strength map.
 
+![Horizontal Gradient](screenshots/horizontal_gradient.png)
+
+![Vertical Gradient](screenshots/vertical_gradient.png)
+
+![Edge Strength Map](screenshots/edge_strength.png)
+
 **Purpose:**
 
 * Introduces the concept of gradients.
@@ -87,6 +99,8 @@ Edge detection has historically been a fundamental computer vision technique. Wh
 ### 6. Threshold Segmentation
 
 A threshold was applied to the edge-strength map to create a binary image.
+
+![Threshold Segmentation](screenshots/segmentation.png)
 
 **Purpose:**
 
@@ -102,6 +116,10 @@ Thresholding is one of the simplest segmentation techniques. More advanced syste
 
 Images were flipped using NumPy slicing.
 
+![Horizontal Flip](screenshots/horizontal_flip.png)
+
+![Vertical Flip](screenshots/vertical_flip.png)
+
 **Purpose:**
 
 * Demonstrates geometric transformations through indexing operations.
@@ -115,6 +133,8 @@ Image flipping is frequently used in data augmentation pipelines to increase tra
 ### 8. 90-Degree Rotation
 
 The image was rotated by 90 degrees.
+
+![90-Degree Rotation](screenshots/rotation.png)
 
 **Purpose:**
 
